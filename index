@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nav Reponsive</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="" class="logo">LOGO</a>
+    </div>
+    <div class="toggle">
+      <a href=""><i class="fa fa-bars" aria-hidden="true"></i>
+</a>
+      <div class="close">
+        <a href=""><i class="fa fa-times" aria-hidden="true"></i>
+</a>
+      </div>
+    </div>
+    <div class="nav">
+      <ul>
+        <li>Inicio</li>
+        <li>Blog</li>
+        <li>Contacto</li>
+      </ul>
+    </div>
+  </header>
+  <div class="verticalMenu">
+    <a href="">Inicio</a>
+    <a href="">Blog</a>
+    <a href="">Contacto</a>
+  </div>
+  
+</body>
+</html>
