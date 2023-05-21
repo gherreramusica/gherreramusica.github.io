@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&display=swap');
+
+
 
 
 *{
@@ -41,7 +44,27 @@ ul li{
   display: none;
   cursor: pointer;
 }
-
+.content{
+  margin: auto;
+  width: 70%;
+  color: black;
+  font-weight: 200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.content p{
+  color: black;
+  font-family: 'Crimson Text', serif;
+  font-weight: 400;
+}
+.primeraletra{
+  font-size: 35px;
+  font-weight: 400;
+  margin-left: 3rem;
+  color: black;
+}
 @media only screen and (max-width:800px){
   .toggle {
     display: block;
