@@ -59,6 +59,7 @@ ul li{
 }
 
 .content p{
+  border: 5px solid #000000;
   padding: 20px;
   background-color: rgb(255, 255, 255);
   color: rgb(1, 1, 1);
@@ -95,12 +96,14 @@ ul li{
   height: 100vh;
 }
 .nombre p, h2{
+  border: 5px solid #000000;
   padding: 20px;
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   font-family: 'Crimson Text', serif;
 }
 .felicidades p, h2 {
+  border: 5px solid #000000;
   padding: 20px;
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
@@ -122,6 +125,7 @@ ul li{
   font-family: 'Crimson Text', serif;
 }
 .feliz p, h2 {
+  border: 5px solid #000000;
   padding: 20px;
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
