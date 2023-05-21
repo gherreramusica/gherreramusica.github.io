@@ -15,10 +15,14 @@ body{
   background-size: cover;
 }
 header{
+  position: sticky;
+  top:0;
+  left:0;
   display: flex;
   justify-content: space-between;
   padding: 20px;
   background-color: black;
+  z-index: 1000;
 }
 .nav a{
   font-size: 20px;
