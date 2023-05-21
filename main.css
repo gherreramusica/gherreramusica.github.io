@@ -1,49 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
 *{
+  margin: 0;
   padding: 0;
-  margin:0;
-  text-decoration: none;
   color: white;
-  font-family: 'raleway', sans-serif;
-  font-size: 20px;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Kanit', sans-serif;
+  font-size: 30px;
 }
 header{
-  background-color:black;
-  padding: 40px;
   display: flex;
   justify-content: space-between;
+  padding: 20px;
+  background-color: black;
 }
-.verticalMenu{
-  background-color:#808080;
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-  padding-right: 30px;
+.nav a{
+  font-size: 20px;
+  padding-left: 10px;
 }
-.verticalMenu a{
-  padding: 10px;
-}
-ul{
-  display:flex;
-  list-style: none;
+.verticalNav{
+  padding:20px;
+  background-color: black;
+  display: none;
+  transition: 5s;
 }
 ul li{
-  padding-left:10px;
+  font-size: 20px;
+  list-style: none;
+  padding-bottom: 10px;
 }
-.toggle, .close{
-  display:none;
+.toggle{
+  display: none;
+  cursor: pointer;
 }
-.show{
-  display:block;
+.close{
+  display: none;
+  cursor: pointer;
 }
-.verticalMenu{
-  display:none;
-}
-@media only screen and (max-width: 500px){
-  .toggle{
+
+@media only screen and (max-width:800px){
+  .toggle {
     display: block;
   }
-  .nav {
+  .nav{
+    display: none;
+  }
+  .show{
+    display: block;
+  }
+  .hide{
     display: none;
   }
   
-} 
+}
