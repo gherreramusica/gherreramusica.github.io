@@ -61,6 +61,48 @@ ul li{
   margin-left: 3rem;
   color: black;
 }
+.nombre{
+  margin: auto;
+  width: 70%;
+  color: black;
+  font-weight: 200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Crimson Text', serif;
+}
+.felicidades {
+  margin: auto;
+  width: 70%;
+  color: black;
+  font-weight: 200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.nombre p, h2{
+ 
+  color: black;
+  font-family: 'Crimson Text', serif;
+}
+.felicidades p, h2 {
+  
+  color: black;
+  font-family: 'Crimson Text', serif;
+  font-size: 30px;
+  font-weight: 200;
+  text-align: center;
+}
+.feliz p, h2 {
+  
+  color: black;
+  font-family: 'Crimson Text', serif;
+  font-size: 30px;
+  font-weight: 200;
+  text-align: center;
+}
 @media only screen and (max-width:800px){
   .toggle {
     display: block;
@@ -75,4 +117,3 @@ ul li{
     display: none;
   }
   
-}
