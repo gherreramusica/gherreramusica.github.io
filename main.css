@@ -103,6 +103,13 @@ ul li{
   font-weight: 200;
   text-align: center;
 }
+.fin{
+  color: black;
+  font-family: 'Crimson Text', serif;
+  font-size: 30px;
+  font-weight: 200;
+  text-align: center;
+}
 @media only screen and (max-width:800px){
   .toggle {
     display: block;
