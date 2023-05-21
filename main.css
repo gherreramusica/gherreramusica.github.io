@@ -1,0 +1,49 @@
+*{
+  padding: 0;
+  margin:0;
+  text-decoration: none;
+  color: white;
+  font-family: 'raleway', sans-serif;
+  font-size: 20px;
+}
+header{
+  background-color:black;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.verticalMenu{
+  background-color:#808080;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding-right: 30px;
+}
+.verticalMenu a{
+  padding: 10px;
+}
+ul{
+  display:flex;
+  list-style: none;
+}
+ul li{
+  padding-left:10px;
+}
+.toggle, .close{
+  display:none;
+}
+.show{
+  display:block;
+}
+.verticalMenu{
+  display:none;
+}
+@media only screen and (max-width: 500px){
+  .toggle{
+    display: block;
+  }
+  .nav {
+    display: none;
+  }
+  
+} 
