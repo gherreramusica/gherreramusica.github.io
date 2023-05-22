@@ -12,3 +12,14 @@ close.addEventListener('click', () =>{
     close.classList.toggle('show');
     toggle.classList.toggle('hide');
 })
+
+var prev = document.querySelector('.prev');
+var next = document.querySelector('.next');
+var carrusel = document.querySelector('.carrusel');
+
+next.addEventListener('click', () =>{
+    carrusel.scrollLeft += 400;
+});
+prev.addEventListener('click', () =>{
+    carrusel.scrollLeft += '-100';
+})

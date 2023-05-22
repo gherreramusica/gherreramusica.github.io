@@ -8,36 +8,48 @@
   box-sizing: border-box;
 }
 body{
+  position: ;
   font-family: 'Kanit', sans-serif;
   font-size: 30px;
-  background-image: url('bibi.jpeg');
+  background-image: url('');
   background-attachment: fixed;
   background-size: contain;
+  background-color: black;
 }
 header{
+  width: 100%;
   position: sticky;
-  top:0;
+  bottom:0;
   left:0;
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  background-color: black;
+  background-color: rgb(19, 19, 19);
   z-index: 1000;
+  border-top: solid #242424;
+}
+.logo, .close, .toggle{
+  color: rgb(255, 221, 0);
+  font-weight: 500;
 }
 .nav a{
   font-size: 20px;
   padding-left: 10px;
+  color: rgb(255, 221, 0);
 }
 .verticalNav{
   padding:20px;
-  background-color: black;
+  background-color: rgb(19, 19, 19);
   display: none;
-  transition: 5s;
+  position: sticky;
+  bottom: 90px;
 }
 ul li{
+  color: rgb(255, 221, 0);
   font-size: 20px;
   list-style: none;
   padding-bottom: 10px;
+ 
 }
 .toggle{
   display: none;
@@ -47,103 +59,65 @@ ul li{
   display: none;
   cursor: pointer;
 }
-.content{
-  margin: auto;
-  width: 70%;
-  color: black;
-  font-weight: 200;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.content p{
-  border: 5px solid #000000;
-  padding: 20px;
-  background-color: rgb(255, 255, 255);
-  color: rgb(1, 1, 1);
-  font-family: 'Crimson Text', serif;
-  font-weight: 400;
-}
-.primeraletra{
-  font-size: 35px;
-  font-weight: 400;
-  margin-left: 3rem;
-  color: rgb(5, 5, 5);
-}
-.nombre{
-  
-  margin: auto;
-  width: 70%;
-  color: rgb(70, 70, 70);
-  font-weight: 200;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  font-family: 'Crimson Text', serif;
-}
-.felicidades {
-   
-  margin: auto;
-  width: 70%;
-  color: rgb(90, 90, 90);
-  font-weight: 200;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-.nombre p, h2{
-  border: 5px solid #000000;
-  padding: 20px;
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  font-family: 'Crimson Text', serif;
-}
-.felicidades p, h2 {
-  border: 5px solid #000000;
-  padding: 20px;
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  font-family: 'Crimson Text', serif;
-  font-size: 30px;
-  font-weight: 200;
-  text-align: center;
-}
-.feliz{
-  margin: auto;
-  width: 70%;
-  color: rgb(70, 70, 70);
-  font-weight: 200;
+.sectionA{
+  margin-top: 0px;
+  background-image: url(concert.png);
+  background-size:cover ;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
   height: 100vh;
-  font-family: 'Crimson Text', serif;
+  font-size: 140px;
+  font-weight: 900;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.feliz p, h2 {
-  border: 5px solid #000000;
-  padding: 20px;
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  font-family: 'Crimson Text', serif;
-  font-size: 30px;
-  font-weight: 200;
-  text-align: center;
+.imagen{
+  position: absolute;
+  top: 50px;
+  left: ;
+}
+
+
+.text{
+  padding: 30px;
+  background-color: rgb(0, 0, 0);
+  justify-self:start ;
+}
+.sectionB{
   
+  padding-left: 9%;
 }
-.fin{
-  color: rgb(255, 255, 255);
-  font-family: 'Crimson Text', serif;
-  font-size: 30px;
-  font-weight: 200;
-  text-align: center;
-  height: 100vh;
+.carrusel{
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  gap: 15px;
+  scroll-behavior: smooth;
 }
-@media only screen and (max-width:800px){
+.prev{
+  position:fixe;
+  top: 45%;
+  right: 76%;
+  cursor: pointer;
+}
+.next{
+  position: fixe;
+  top: 45%;
+  left: 95%;
+  cursor: pointer;
+}
+
+@media only screen and (max-width:1300px){
+  
+  .sectionA{
+    font-size: 110px;
+  }
+}
+
+@media only screen and (max-width:1100px){
   .toggle {
     display: block;
   }
@@ -156,5 +130,9 @@ ul li{
   .hide{
     display: none;
   }
-  
+  .sectionA{
+  font-size: 100px;
+  text-align: center;
+  line-height: 1;
+  }
 }
