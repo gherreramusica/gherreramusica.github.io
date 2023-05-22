@@ -21,14 +21,15 @@ header{
   padding: 20px;
   background-color: rgba(100, 100, 100, 0);
   z-index: 1000;
-  border-top: solid #242424;
   position: absolute;
   top: 0;
   left: 0;
 }
-.logo{
+.logo i{
   font-size: 20px;
   font-weight: 400;
+  padding-left: 10px;
+  
 }
 .close, .toggle{
   color: rgb(255, 255, 255);
