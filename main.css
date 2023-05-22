@@ -23,6 +23,7 @@ header{
   left:0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 20px;
   background-color: rgb(19, 19, 19);
   z-index: 1000;
@@ -134,5 +135,27 @@ ul li{
   font-size: 100px;
   text-align: center;
   line-height: 1;
+  }
+}
+@media only screen and (max-width:500px){
+  .toggle {
+    display: block;
+  }
+  .nav{
+    display: none;
+  }
+  .show{
+    display: block;
+  }
+  .hide{
+    display: none;
+  }
+  .sectionA{
+  font-size: 70px;
+  text-align: center;
+  line-height: 1;
+  }
+  .logo{
+    font-size: 20px;
   }
 }
