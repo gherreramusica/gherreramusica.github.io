@@ -61,7 +61,7 @@ ul li{
 }
 .sectionA{
   margin-top: 0px;
-  background-image: url(concert.png);
+  background-image: url('concert.png');
   background-size:cover ;
   display: flex;
   flex-direction: column;
