@@ -11,9 +11,6 @@ body{
   position: ;
   font-family: 'Kanit', sans-serif;
   font-size: 30px;
-  background-image: url('');
-  background-attachment: fixed;
-  background-size: contain;
   background-color: black;
 }
 header{
