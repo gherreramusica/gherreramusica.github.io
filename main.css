@@ -8,46 +8,56 @@
   box-sizing: border-box;
 }
 body{
-  position: ;
+
   font-family: 'Kanit', sans-serif;
   font-size: 30px;
   background-color: black;
 }
 header{
   width: 100%;
-  position: sticky;
-  bottom:0;
-  left:0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: rgb(19, 19, 19);
+  background-color: rgba(100, 100, 100, 0);
   z-index: 1000;
   border-top: solid #242424;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
-.logo, .close, .toggle{
-  color: rgb(255, 221, 0);
+.logo{
+  font-size: 20px;
+  font-weight: 400;
+}
+.close, .toggle{
+  color: rgb(255, 255, 255);
   font-weight: 500;
 }
 .nav a{
   font-size: 20px;
   padding-left: 10px;
-  color: rgb(255, 221, 0);
+  color: rgb(255, 255, 255);
+  font-weight: 200;
 }
 .verticalNav{
   padding:20px;
-  background-color: rgb(19, 19, 19);
+  background-color: rgba(19, 19, 19, 0);
   display: none;
-  position: sticky;
-  bottom: 90px;
+  position: relative;
+  top: 90px;
 }
+
 ul li{
-  color: rgb(255, 221, 0);
+  color: rgb(255, 255, 255);
   font-size: 20px;
   list-style: none;
   padding-bottom: 10px;
- 
+  font-weight: 200;
+ cursor: pointer;
+}
+ul li:hover{
+  text-decoration: underline;
 }
 .toggle{
   display: none;
@@ -69,6 +79,7 @@ ul li{
   height: 100vh;
   font-size: 140px;
   font-weight: 900;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -78,13 +89,13 @@ ul li{
   
 }
 
-.carrusel{
+/* .carrusel{
   position: relative;
   display: flex;
   overflow: hidden;
   gap: 15px;
   scroll-behavior: smooth;
-}
+} */
 .prev{
   position:fixe;
   top: 45%;
@@ -124,7 +135,7 @@ ul li{
   line-height: 1;
   }
   .logo{
-    font-size: 25px;
+    font-size: 20px;
   }
 }
 @media only screen and (max-width:500px){
