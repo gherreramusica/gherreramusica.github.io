@@ -13,7 +13,6 @@ body{
   font-family: 'Kanit', sans-serif;
   font-size: 30px;
   background-color: rgb(3, 3, 3);
-  overflow-x: hidden;
 }
 header{
   width: 100%;
@@ -92,9 +91,11 @@ ul li:hover{
 }
 
 .imagen{
+  
   position: absolute;
   height: 100vh;
   top: 0;
+  z-index: ;
 }
 .sectionB{
   margin: auto;
