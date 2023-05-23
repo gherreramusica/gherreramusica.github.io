@@ -4,7 +4,7 @@
 *{
   margin: 0;
   padding: 0;
-  color: white;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   box-sizing: border-box;
 }
@@ -12,7 +12,7 @@ body{
 
   font-family: 'Kanit', sans-serif;
   font-size: 30px;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
 }
 header{
   width: 100%;
@@ -88,22 +88,20 @@ ul li:hover{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.text{
-  padding: 30px;
-  background-color: rgb(0, 0, 0);
-  
-}
+
 .imagen{
   position: absolute;
   height: 100vh;
   top: 0;
 }
 .sectionB{
+  margin-top: px;
   height: 100%;
   width: 100%;
   background-color: rgb(255, 255, 255);
 }
 .bio p{
+  margin-top: px;
   width: 60%;
   color: black;
   font-family: 'Special Elite', cursive;
@@ -188,6 +186,6 @@ ul li:hover{
     font-size: 20px;
   }
   .bio p{
-    width: 90%;
+    width: 100%;
   }
 }
