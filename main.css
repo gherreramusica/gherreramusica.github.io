@@ -95,12 +95,15 @@ ul li:hover{
   top: 0;
 }
 .sectionB{
+  margin: auto;
   margin-top: px;
   height: 100%;
   width: 100%;
   background-color: rgb(255, 255, 255);
 }
+
 .bio p{
+  margin: auto;
   margin-top: px;
   width: 60%;
   color: black;
@@ -128,7 +131,30 @@ ul li:hover{
   left: 95%;
   cursor: pointer;
 }
-
+.contacto {
+  margin: 130px 0px;
+}
+form{
+  margin-top: 30px;
+  padding: 20px;
+  margin: auto;
+  width: 50%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+input{
+  appearance: none;
+  border: 1px solid #898989;
+  padding: 10px;
+  color: black;
+  border-radius: 5px;
+  outline: none;
+}
+.mensaje{
+  padding-bottom: 100px;
+}
 @media only screen and (max-width:1300px){
   
   .sectionA{
