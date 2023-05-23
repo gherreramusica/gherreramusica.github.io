@@ -30,3 +30,23 @@ window.addEventListener('scroll', () => {
     let value = window.scrollY;
     titulo.style.marginTop = value * 1 + 'px';
 });
+
+//player
+
+var atras = document.querySelector('.atras');
+var play = document.querySelector('.play');
+var stop = document.querySelector('.stop');
+var siguiente = document.querySelector('.siguiente');
+var audio = document.querySelector('.audio');
+
+
+
+play.addEventListener('click', () => {
+    audio.play();
+});
+
+stop.addEventListener('click', () => {
+    audio.pause();
+});
+
+
