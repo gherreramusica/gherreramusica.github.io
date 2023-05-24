@@ -86,6 +86,8 @@ ul li:hover{
   font-size: 140px;
   font-weight: 900;
   background-clip: text;
+  color: transparent;'
+  -moz-background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
