@@ -270,8 +270,13 @@ input{
   from {transform: rotate(0deg);}
   to {transform: rotate(360deg);}
 }
-
-
+.vinil{
+  animation:linear infinite circular 1s;
+}
+@keyframes circular {
+  from{transform: rotate(0deg)}
+  to{transform: rotate(360deg);}
+}
 /* @media only screen and (max-width:1100px){
   .toggle {
     display: block;
@@ -332,7 +337,7 @@ input{
     display: none;
   }
   .sectionA{
-  font-size: 90px;
+  font-size: 70px;
   text-align: center;
   line-height: 1;
   }
