@@ -13,25 +13,22 @@ close.addEventListener('click', () =>{
     toggle.classList.toggle('hide');
 })
 
-// var prev = document.querySelector('.prev');
-// var next = document.querySelector('.next');
-// var carrusel = document.querySelector('.carrusel');
 
-// next.addEventListener('click', () =>{
-//     carrusel.scrollLeft += 400;
-// });
-// prev.addEventListener('click', () =>{
-//     carrusel.scrollLeft += '-100';
-// })
 
-var titulo = document.querySelector('.titulo');
+ var titulo = document.querySelector('.titulo');
+ var imagen = document.querySelector('.imagen');
+ var nota = document.querySelector('.nota');
+ var checkpoint = document.querySelector('.checkpoint');
+
 
 window.addEventListener('scroll', () => {
     let value = window.scrollY;
-    titulo.style.marginTop = value * 1 + 'px';
-});
+   titulo.style.marginTop = value * 1.1 + 'px';
+    nota.style.marginBottom = value * 1.6 + 'px';
+    // checkpoint.style.marginTop = value * -.9 + 'px';   
+ });
 
-//player
+player
 
 var atras = document.querySelector('.atras');
 var play = document.querySelector('.play');
@@ -47,6 +44,10 @@ play.addEventListener('click', () => {
 
 stop.addEventListener('click', () => {
     audio.pause();
-});
+})
+
+var cabezal = document.querySelector('.titulo');
+
+cabezal.textContent= 'Martin';
 
 
