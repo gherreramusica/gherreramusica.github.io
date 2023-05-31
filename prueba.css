@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    color: rgb(207, 207, 207);
+
+}
+.contenedor{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(24, 24, 24);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:100px 0;
+   
+    
+}
+.timeline{
+   
+    background-color: rgb(24, 24, 24);
+    width: 80%;
+    margin: auto;   
+    position: relative;
+}
+.timeline::before{
+    content: "";
+    width: .1px;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    left: 50%;
+   
+}
+.checkpoint{
+    background-color: rgb(24, 24, 24);
+    width: 50%;
+    
+    position: relative;
+}
+.checkpoint::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: azure;
+    position: absolute;
+    top: 0;   
+    
+}
+.checkpoint:hover::before{
+    background-color: aqua; 
+    transition: all .3s;
+}
+.checkpoint:nth-child(odd)::before{
+    
+   
+    left: -60px;
+}
+.checkpoint:nth-child(even)::before{
+    transform: translate(-50%);
+    right: -70px; 
+}
+.checkpoint:nth-child(odd){
+    float: right;
+    clear: left;
+    border:.1px solid;
+    padding: 20px;
+    margin-right:-50px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+.checkpoint:nth-child(even){
+    float: left;
+    clear: right;
+    border:.1px solid;
+    padding: 20px;
+    margin-left: -50px;
+    border-radius:10px ;
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+
