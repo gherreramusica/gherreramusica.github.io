@@ -88,9 +88,9 @@ ul li:hover{
 .sectionA{
   
   margin-bottom: 200px;
-  background-color: #00000000;
+  background-color: #ffffff;
   margin-top: 100px;
-  background-image: url('concert.png');
+  background-image: url('');
   background-size: cover;
   display: flex;
   flex-direction: column;
