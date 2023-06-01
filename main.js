@@ -23,16 +23,16 @@ close.addEventListener('click', () =>{
 //PARALAX
 
  var titulo = document.querySelector('.titulo');
- var imagen = document.querySelector('.imagen');
- var nota = document.querySelector('.nota');
- var checkpoint = document.querySelector('.checkpoint');
- var vinil = document.querySelector('.vinil');
-window.addEventListener('scroll', () => {
-    let value = window.scrollY;
-    titulo.style.marginTop = value * 1.1 + 'px';
+// // //  var imagen = document.querySelector('.imagen');
+// // //  var nota = document.querySelector('.nota');
+// // //  var checkpoint = document.querySelector('.checkpoint');
+// // //  var vinil = document.querySelector('.vinil');
+ window.addEventListener('scroll', () => {
+   let value = window.scrollY;
+   titulo.style.marginTop = value * 1.1 + 'px';
     nota.style.marginBottom = value * -.4 + 'px';
-    vinil.style.marginBottom = value * -.7 + '10px';
- })
+     vinil.style.marginBottom = value * -.7 + '10px';
+  })
 
  //MUSIC PLAYER
 

@@ -87,10 +87,10 @@ ul li:hover{
 }
 .sectionA{
   
-  margin-bottom: 200px;
-  background-color: #ffffff;
+  margin-bottom: 0px;
+  background-color: #ffffff00;
   margin-top: 100px;
-  background-image: url('concert.png');
+  background-image: url('');
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -106,6 +106,7 @@ ul li:hover{
   -webkit-text-fill-color: transparent; */
   position: relative;
   text-align: center;
+  line-height: 100px;
 }
 .sectionA{
   animation-name: titulo;
@@ -183,23 +184,37 @@ input{
 .controles i{
   color: white;
 }
+.titulo {
+  z-index: -1000;
+}
 .sectionB{
   background-image: url('');
   background-size: cover;
   background-attachment: fixed;
-  margin-top: 800px;
+  margin-top: 0px;
   font: 100;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: end;
+  align-items: end;
   margin-bottom: 100px;
+  background-color: black;
+  h
+  
 }
 .timeline{
+  padding: ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 50%;
   position: relative;
   margin-bottom: 100px;
+  margin: auto;
+  height: 100%;
+  
 }
 .timeline::before{
   content: "";
@@ -207,7 +222,7 @@ input{
   position: absolute;
   width: 2px;
   height: 100%;
-  left: 0%;
+  left: -25px;
   top: 0;
   animation-name:timeline;
   animation-duration: 10s;
@@ -221,7 +236,8 @@ input{
   }
 }
 .checkpoint{
-  width: 60%;
+  width: 100%;
+  height: 100%;
   border: .1px solid; 
   margin-bottom: 80px;
   padding: 20px;
@@ -238,7 +254,8 @@ input{
   height: 20px;
   position: absolute;
   top:0;
-  left: -39px;
+  left: -49px;
+  
 }
 .checkpoint:hover:before{
   background-color: yellow;
@@ -339,7 +356,7 @@ input{
   .sectionA{
   font-size: 70px;
   text-align: center;
-  line-height: 1;
+  line-height: 50px;
   }
   .logo{
     font-size: 20px;
@@ -364,5 +381,8 @@ input{
     width: 100%;
     margin-bottom: 40px;
     margin-left: 0;
+  }
+  .vinil {
+    display: none;
   }
 }
