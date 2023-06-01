@@ -90,7 +90,7 @@ ul li:hover{
   margin-bottom: 200px;
   background-color: #ffffff;
   margin-top: 100px;
-  background-image: url('');
+  background-image: url('concert.png');
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -99,11 +99,11 @@ ul li:hover{
   height: 100vh;
   font-size: 140px;
   font-weight: 900;
-  background-clip: text;
-  color: transparent;
-  -moz-background-clip: text;
+  /* background-clip: text;
+  color: transparent; */
+  /* -moz-background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
   position: relative;
   text-align: center;
 }
