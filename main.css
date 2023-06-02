@@ -97,16 +97,11 @@ ul li:hover{
   align-items: center;
   width: 100%;
   height: 100vh;
-  font-size: 140px;
+  font-size: 200px;
   font-weight: 900;
-  /* background-clip: text;
-  color: transparent; */
-  /* -moz-background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
   position: relative;
   text-align: center;
-  line-height: 100px;
+  line-height: 180px;
 }
 .sectionA{
   animation-name: titulo;
@@ -176,13 +171,19 @@ input{
   position: fixed;
   top:50%;
   right: 0;
-  color:; 
+  
+}
+.arte{
+  position: absolute;
+  top: -5%;
+  left: -160%;
+  z-index: -3000;
 }
 .controles div{
   cursor: pointer;
 }
 .controles i{
-  color: white;
+  color: rgb(0, 0, 0);
 }
 .titulo {
   z-index: -1000;
@@ -199,8 +200,8 @@ input{
   justify-content: end;
   align-items: end;
   margin-bottom: 100px;
-  background-color: black;
-  h
+  background-color: rgba(0, 0, 0, 0);
+  
   
 }
 .timeline{
@@ -212,8 +213,7 @@ input{
   position: relative;
   margin-bottom: 100px;
   margin: auto;
-  height: 100%;
-  
+  height: 100%; 
 }
 
 @keyframes timeline {
@@ -293,9 +293,9 @@ input{
     display: none;
   }
   .sectionA{
-  font-size: 70px;
+  font-size: 100px;
   text-align: center;
-  line-height: 50px;
+  line-height: 100px;
   }
   .logo{
     font-size: 20px;
