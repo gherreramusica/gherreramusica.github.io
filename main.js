@@ -19,14 +19,17 @@ close.addEventListener('click', () =>{
     toggle.classList.toggle('hide');
 })
 
+//OPACITY
+
+window.addEventListener("scroll", function () {
+    let titulo = document.getElementById("titulo");
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    titulo.style.opacity = 1.6 - scrollTop / 500;
+ });
 
 //PARALAX
 
  var titulo = document.querySelector('.titulo');
-// // //  var imagen = document.querySelector('.imagen');
-// // //  var nota = document.querySelector('.nota');
-// // //  var checkpoint = document.querySelector('.checkpoint');
-// // //  var vinil = document.querySelector('.vinil');
  window.addEventListener('scroll', () => {
    let value = window.scrollY;
    titulo.style.marginTop = value * 1.1 + 'px';
@@ -47,6 +50,26 @@ play.addEventListener('click', () => {
 stop.addEventListener('click', () => {
     audio.pause();
 });
+
+//timeline
+
+// const observer = new IntersectionObserver((entries) => {
+//     entries.forEach((entry) => {
+//         console.log(entry)
+//         if (entry.isIntersecting) {
+//             entry.target.classList.add('mostrar');
+//         } else {
+//             entry.target.classList.remove('mostrar');
+//         }
+//     });
+// });
+
+
+
+// const hidden = document.querySelectorAll('.hidden');
+// hidden.forEach((el) => observer.observe(el));
+
+
 
 
 
