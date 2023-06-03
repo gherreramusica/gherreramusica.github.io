@@ -87,7 +87,6 @@ ul li:hover{
 }
 .sectionA{
   
-  margin-bottom: 0px;
   background-color: #ffffff00;
   margin-top: 100px;
   background-image: url('');
@@ -97,7 +96,7 @@ ul li:hover{
   align-items: center;
   width: 100%;
   height: 100vh;
-  font-size: 200px;
+  font-size: 250px;
   font-weight: 900;
   position: relative;
   text-align: center;
@@ -140,7 +139,8 @@ ul li:hover{
   cursor: pointer;
 }
 .contacto {
-  margin: 130px 0px;
+  margin: auto;
+  margin-bottom: 100px;
 }
 form{
   margin-top: 30px;
@@ -156,7 +156,7 @@ form{
 input{
   appearance: none;
   border: 1px solid #323232;
-  padding: 10px;
+  padding: 20px;
   color: rgb(255, 255, 255);
   border-radius: 5px;
   outline: none;
@@ -203,16 +203,15 @@ input{
   background-color: rgba(0, 0, 0, 0);
 }
 .timeline{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+ 
+  width: 2px;
   position: relative;
   margin-bottom: 100px;
   margin: auto;
-  height: 100%; 
-  background-color: rgba(1, 232, 232, 0);
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  animation-name: timeline;
+  animation-duration: 10s;
 }
 
 @keyframes timeline {
@@ -225,17 +224,39 @@ input{
 }
 .checkpoint{
   text-align: center;
-  width: 30%;
+  width: 300px;
   border: .1px solid; 
   margin-bottom: 80px;
   padding: 10px;
   border-radius: 10px;
-  margin-left: 30px;
   position: relative;
   background-color: rgb(29, 29, 29);
-
 }
-
+.checkpoint:nth-child(even){
+  float: right;
+  margin-right: 40px;
+  
+}
+.checkpoint:nth-child(odd){
+  float: left;
+  margin-left: 40px;
+}
+.checkpoint::before{
+  content: "";
+  position: absolute;
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%; 
+}
+.checkpoint:nth-child(even)::before{
+  top: 0;
+  left: 110%;
+}
+.checkpoint:nth-child(odd)::before{
+  top: 0;
+  left: -49px;
+}
 .checkpoint h3,
 .checkpoint h2,
 .checkpoint p{
@@ -248,35 +269,19 @@ input{
 .checkpoint h2{
   font-weight: 300;
 }
-.nota{
-  animation: rotacion 10s infinite;
-}
-@keyframes rotacion {
-  from {transform: rotate(0deg);}
-  to {transform: rotate(360deg);}
-}
-.flower{
-  animation: flor 10s infinite;
-}
-@keyframes flor {
-  from {transform: rotate(0deg);}
-  to {transform: rotate(360deg);}
-}
-.vinil{
-  animation:linear infinite circular 1s;
-}
-@keyframes circular {
-  from{transform: rotate(0deg)}
-  to{transform: rotate(360deg);}
-}
 .hidden{
   opacity: 1;
 }
 .mostrar{
   opacity: 0;
 }
-
-@media only screen and (max-width:800px){
+@media only screen and (max-width:900px){
+  .sectionA{
+    font-size: 150px;
+    line-height: 120px;
+  }
+}
+@media only screen and (max-width:600px){
   .toggle {
     display: block;
   }
@@ -294,7 +299,7 @@ input{
   .sectionA{
   font-size: 100px;
   text-align: center;
-  line-height: 100px;
+  line-height: 70px;
   }
   .logo{
     font-size: 20px;
@@ -312,15 +317,50 @@ input{
     display: none;
   }
   .timeline{
-    padding: 30px;
     width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  .checkpoint{
-    width: 100%;
-    margin-bottom: 40px;
-    margin-left: 0;
+  .checkpoint:nth-child(even){
+    
+    margin-right: 0px;
+    
+  }
+  .checkpoint:nth-child(odd){
+    
+    margin-left: 0px;
   }
   .vinil {
     display: none;
+  }
+}
+@media only screen and (max-width:500px){
+  .sectionA{
+    font-size: 90px;
+    line-height: 60px;
+  }
+  .timeline{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+  }
+  .checkpoint:nth-child(even){
+    
+    margin-right: 0px;
+    
+  }
+  .checkpoint:nth-child(odd){
+    
+    margin-left: 0px;
+  }
+  
+}
+@media only screen and (max-width:332px){
+  .sectionA{
+    font-size: 55px;
+    line-height: 50px;
   }
 }
