@@ -200,7 +200,7 @@ input{
   justify-content: end;
   align-items: end;
   margin-bottom: 100px;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(43, 43, 43, 0);
 }
 .timeline{
  
@@ -274,6 +274,21 @@ input{
 }
 .mostrar{
   opacity: 0;
+}
+.sectionC{
+  width: 100%;
+  padding: 40px;
+}
+.sectionC p{
+  font-size:20px ;
+  font-family: 'Kanit', sans-serif;
+}
+@media only screen and (min-width:900px){
+  .sectionC {
+    padding: 300px;
+    text-align: center;
+
+  }
 }
 @media only screen and (max-width:900px){
   .sectionA{
