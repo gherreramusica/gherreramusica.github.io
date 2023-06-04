@@ -29,13 +29,13 @@ window.addEventListener("scroll", function () {
 
 //PARALAX
 
- var titulo = document.querySelector('.titulo');
- window.addEventListener('scroll', () => {
-   let value = window.scrollY;
-   titulo.style.marginTop = value * 1.1 + 'px';
-    nota.style.marginBottom = value * -.4 + 'px';
-     vinil.style.marginBottom = value * -.7 + '10px';
-  })
+//  var titulo = document.querySelector('.titulo');
+//  window.addEventListener('scroll', () => {
+//    let value = window.scrollY;
+//    titulo.style.marginTop = value * 1.1 + 'px';
+//     nota.style.marginBottom = value * -.4 + 'px';
+//      vinil.style.marginBottom = value * -.7 + '10px';
+//   })
 
  //MUSIC PLAYER
 
