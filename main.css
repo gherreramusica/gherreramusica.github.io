@@ -9,14 +9,10 @@
   box-sizing: border-box;
 }
 body{
-  
-  background-size: cover;
-  background-repeat: no-repeat;
   width: 100%;
   font-family: 'Kanit', sans-serif;
   font-size: 30px;
   background-color: rgb(0, 0, 0);
-  overflow-x: hidden;
 }
 header{
   width: 100%;
@@ -86,11 +82,8 @@ ul li:hover{
   cursor: pointer;
 }
 .sectionA{
-  
   background-color: #ffffff00;
-  margin-top: 100px;
-  background-image: url('');
-  background-size: cover;
+  margin-top: 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -101,6 +94,9 @@ ul li:hover{
   position: relative;
   text-align: center;
   line-height: 180px;
+  display: flex;
+  justify-content: cente;
+  
 }
 .sectionA{
   animation-name: titulo;
@@ -140,7 +136,7 @@ ul li:hover{
 }
 .contacto {
   margin: auto;
-  margin-bottom: 100px;
+  
 }
 form{
   margin-top: 30px;
@@ -189,10 +185,6 @@ input{
   z-index: -1000;
 }
 .sectionB{
-  background-image: url('');
-  background-size: cover;
-  background-attachment: fixed;
-  margin-top: 0px;
   font: 100;
   width: 100%;
   height: 100%;
@@ -203,7 +195,6 @@ input{
   background-color: rgba(43, 43, 43, 0);
 }
 .timeline{
- 
   width: 2px;
   position: relative;
   margin-bottom: 100px;
@@ -276,24 +267,49 @@ input{
   opacity: 0;
 }
 .sectionC{
-  width: 100%;
-  padding: 40px;
+  margin: auto;
+  width: 50%;
+  padding: 0px;
+  height: 100%;
+  text-align: center;
+ 
+}
+.sectionC hr{
+  width: 100px;
+  background-color: white;
+  height: 10px;
+  margin: auto;
 }
 .sectionC p{
   font-size:20px ;
   font-family: 'Kanit', sans-serif;
 }
-@media only screen and (min-width:900px){
+.sectionB_contacto{
+  background-color: rgba(0, 0, 255, 0);
+  height: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  
+}
+.sectionB_contacto hr{
+  width: 100px;
+  margin:  auto;
+  height: 10px;
+  background-color: white;
+}
+@media only screen and (min-width:1000px){
   .sectionC {
-    padding: 300px;
     text-align: center;
-
   }
 }
 @media only screen and (max-width:900px){
   .sectionA{
     font-size: 150px;
     line-height: 120px;
+  }
+  .sectionC{
+    width: 90%;
+    text-align: center;
   }
 }
 @media only screen and (max-width:600px){
@@ -304,10 +320,8 @@ input{
     display: none;
   }
   .show{
-    display: block;
-    
+    display: block; 
   }
-  
   .hide{
     display: none;
   }
@@ -339,9 +353,7 @@ input{
     align-items: center;
   }
   .checkpoint:nth-child(even){
-    
     margin-right: 0px;
-    
   }
   .checkpoint:nth-child(odd){
     
@@ -349,6 +361,10 @@ input{
   }
   .vinil {
     display: none;
+  }
+  .sectionC{
+    width: 90%;
+    text-align: center;
   }
 }
 @media only screen and (max-width:500px){
@@ -363,19 +379,23 @@ input{
     flex-direction: column;
   }
   .checkpoint:nth-child(even){
-    
     margin-right: 0px;
-    
   }
   .checkpoint:nth-child(odd){
-    
     margin-left: 0px;
   }
-  
+  .sectionC{
+    width: 90%;
+    text-align: center;
+  }
 }
 @media only screen and (max-width:332px){
   .sectionA{
     font-size: 60px;
     line-height: 50px;
+  }
+  .sectionC{
+    width: 90%;
+    text-align: center;
   }
 }
