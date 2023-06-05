@@ -71,15 +71,20 @@ header{
     transform: translate(0, -10px);
     position: absolute;
 }
-.bar:active::before{
+
+
+
+/* ANIMATION */
+
+ .toggle.open .bar::before{
     transform: rotate(45deg);
     transition: .3s;
 }
-.bar:active::after{
+.toggle.open .bar::after{
     transform: rotate(-45deg);
     transition: .3s;
 }
-.bar:active{
+.toggle.open .bar{
     transform: rotate(360deg);
     background-color: transparent;
     transition: .3s;
