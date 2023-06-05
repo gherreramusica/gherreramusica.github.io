@@ -21,7 +21,7 @@ header{
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: rgba(0, 0, 0, 0.784);
+  background-color: rgba(215, 8, 8, 0);
   z-index: 1000;
   position: sticky;
   top: 0;
@@ -40,12 +40,38 @@ header{
   padding-left: 10px;
   
 }
-.toggle{
-  font-size: 30px;
+header .toggle{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  
+  /* border: 1px solid; */
+  width: 70px;
+  height: 40px;
+  position: relative;
 }
 .close, .toggle{
   color: rgb(255, 255, 255);
   font-weight: 500;
+}
+.lineA{
+  width: 50px;
+  height: 1px;
+  background-color: rgb(255, 255, 255);
+}
+.lineB{
+  width: 50px;
+  height: 1px;
+  background-color: rgb(255, 255, 255);
+}
+.lineA:active{
+  transform: rotate(45deg);
+  background-color: white;
+}
+.lineB:active{
+  transform: rotate(-45deg);
+  background-color: white;
 }
 .nav a{
   font-size: 20px;
@@ -58,8 +84,10 @@ header{
   background-color: rgba(0, 0, 0, 0.685);
   display: none;
   position: relative;
-  top: 10px;
+  top: 0px;
   z-index: 1000; 
+  border-top: .1px solid;
+  border-bottom: .1px solid;
 }
 
 ul a{
@@ -73,9 +101,10 @@ ul a{
 ul li:hover{
   text-decoration: underline;  
 }
-.toggle{
+header .toggle{
   display: none;
   cursor: pointer;
+  
 }
 .close{
   display: none;
@@ -313,8 +342,8 @@ input{
   }
 }
 @media only screen and (max-width:600px){
-  .toggle {
-    display: block;
+  header .toggle {
+    display: flex;
   }
   .nav{
     display: none;

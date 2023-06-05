@@ -33,8 +33,58 @@
     margin-left: 20px;
    
 }
-
-
+.toggle{
+    border: solid;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+header{
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: antiquewhite;
+}
+.bar{
+    width: 30px;
+    height: 4px;
+    background-color: black;
+    position: absolute;
+}
+.bar::before, .bar::after{
+    content: "";
+    width: 30px;
+    height: 4px;
+    background-color: black;
+}
+.bar::before{
+    
+    transform: translate(0%, 10px);
+    position: absolute;
+}
+.bar::after{
+    transform: translate(0, -10px);
+    position: absolute;
+}
+.bar:active::before{
+    transform: rotate(45deg);
+    transition: .3s;
+}
+.bar:active::after{
+    transform: rotate(-45deg);
+    transition: .3s;
+}
+.bar:active{
+    transform: rotate(360deg);
+    background-color: transparent;
+    transition: .3s;
+    
+}
 
 
 
