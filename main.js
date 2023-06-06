@@ -1,4 +1,4 @@
-
+//MENU FUNCTIONALITY
 
 var toggle = document.querySelector('.toggle');
 var close = document.querySelector('.close');
@@ -19,15 +19,14 @@ window.addEventListener("scroll", function () {
     titulo.style.opacity = 1.6 - scrollTop / 500;
  });
 
-//PARALAX
+// // //PARALAX
 
-//  var titulo = document.querySelector('.titulo');
-//  window.addEventListener('scroll', () => {
-//    let value = window.scrollY;
-//    titulo.style.marginTop = value * 1.1 + 'px';
-//     nota.style.marginBottom = value * -.4 + 'px';
-//      vinil.style.marginBottom = value * -.7 + '10px';
-//   })
+  var titulo = document.querySelector('.titulo');
+  window.addEventListener('scroll', () => {
+    let value = window.scrollY;
+   titulo.style.marginTop = value * 1.1 + 'px';
+     
+   })
 
  //MUSIC PLAYER
 
