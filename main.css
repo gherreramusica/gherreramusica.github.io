@@ -56,6 +56,8 @@ header{
   width: 50px;
   height: 1px;
   background-color: rgb(255, 255, 255);
+  transition: .3s;
+  transform: translate(-0%);
   
 }
 
@@ -65,7 +67,9 @@ header{
   height: 1px;
   background-color: rgb(255, 255, 255);
   position: absolute;
-  transform: translateY(16px);
+  transform: translateY(16px); 
+  transition: .3s;
+  
 }
 .lineA::after {
   content: "";
@@ -74,6 +78,7 @@ header{
   background-color: rgb(255, 255, 255);
   position: absolute;
   transform: translateY(-16px);
+  transition: .3s;
 }
 
 
@@ -329,8 +334,11 @@ input{
   margin: auto;
   width: 50%;
   padding: 0px;
-  height: 100%;
+  height: 100vh;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
  
 }
 .sectionC hr{
@@ -344,10 +352,13 @@ input{
   font-family: 'Kanit', sans-serif;
 }
 .sectionB_contacto{
-  background-color: rgba(0, 0, 255, 0);
-  height: 100%;
+  background-color: rgb(0, 0, 0);
+  height: 100vh;
   padding-top: 100px;
   padding-bottom: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   
 }
 .sectionB_contacto hr{
