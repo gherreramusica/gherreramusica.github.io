@@ -1,8 +1,4 @@
-const bio = document.getElementById('bio');
 
-bio.addEventListener('click', function bio(){
-    document.write('HOLA MUNDO');
-})
 
 var toggle = document.querySelector('.toggle');
 var close = document.querySelector('.close');
@@ -13,11 +9,7 @@ toggle.addEventListener('click', () =>{
     toggle.classList.toggle('show');
    
 });
-close.addEventListener('click', () =>{
-    verticalNav.classList.toggle('show');
-    close.classList.toggle('show');
-    toggle.classList.toggle('hide');
-})
+
 
 //OPACITY
 
