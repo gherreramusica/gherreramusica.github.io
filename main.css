@@ -146,8 +146,6 @@ header .toggle{
   cursor: pointer;
 }
 .sectionA{
-  background-color: #ffffff00;
-  margin-top: 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -157,10 +155,7 @@ header .toggle{
   font-weight: 900;
   position: relative;
   text-align: center;
-  line-height: 180px;
-  display: flex;
-  justify-content: cente;
-  
+  line-height: 180px; 
 }
 .sectionA{
   animation-name: titulo;
@@ -172,11 +167,9 @@ header .toggle{
 }
 
 .imagen{
-  
   position: absolute;
   height: 100%;
   top: 0;
-  
 }
 
 .prev{

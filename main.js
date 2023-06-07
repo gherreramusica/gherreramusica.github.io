@@ -11,20 +11,20 @@ toggle.addEventListener('click', () =>{
 });
 
 
-//OPACITY
+// //OPACITY
 
-window.addEventListener("scroll", function () {
+    window.addEventListener("scroll", function () {
     let titulo = document.getElementById("titulo");
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    titulo.style.opacity = 1.6 - scrollTop / 500;
- });
+     titulo.style.opacity = 1.6 - scrollTop / 500;
+    });
 
 // // //PARALAX
 
   var titulo = document.querySelector('.titulo');
   window.addEventListener('scroll', () => {
     let value = window.scrollY;
-   titulo.style.marginTop = value * 1.1 + 'px';
+   titulo.style.marginTop = value * 1 + 'px';
      
    })
 
