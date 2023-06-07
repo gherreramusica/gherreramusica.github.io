@@ -264,14 +264,7 @@ input{
   animation-duration: 10s;
 }
 
-@keyframes timeline {
-  from{
-    height: 0%;
-  }
-  to{
-    height: 100%;
-  }
-}
+
 .checkpoint{
   text-align: center;
   width: 300px;
@@ -280,8 +273,13 @@ input{
   padding: 10px;
   border-radius: 10px;
   position: relative;
-  background-color: rgb(29, 29, 29);
+  background-color: rgb(72, 72, 72);
+  opacity: 0;
+  transition: all 3s;
+  
 }
+
+
 .checkpoint:nth-child(even){
   float: right;
   margin-right: 40px;
@@ -319,12 +317,7 @@ input{
 .checkpoint h2{
   font-weight: 300;
 }
-.hidden{
-  opacity: 1;
-}
-.mostrar{
-  opacity: 0;
-}
+
 .sectionC{
   margin: auto;
   width: 50%;
@@ -362,6 +355,7 @@ input{
   height: 10px;
   background-color: white;
 }
+
 @media only screen and (min-width:1000px){
   .sectionC {
     text-align: center;

@@ -15,8 +15,10 @@ toggle.addEventListener('click', () =>{
 
     window.addEventListener("scroll", function () {
     let titulo = document.getElementById("titulo");
+    let imagen = this.document.getElementById("imagen");
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
      titulo.style.opacity = 1.6 - scrollTop / 500;
+     imagen.style.opacity = 1.6 - scrollTop / 500;
     });
 
 // // //PARALAX
@@ -26,7 +28,7 @@ toggle.addEventListener('click', () =>{
     let value = window.scrollY;
    titulo.style.marginTop = value * 1 + 'px';
      
-   })
+   });
 
  //MUSIC PLAYER
 
@@ -42,23 +44,22 @@ stop.addEventListener('click', () => {
     audio.pause();
 });
 
-//timeline
+var checkpoint = document.querySelectorAll('.checkpoint');
 
-// const observer = new IntersectionObserver((entries) => {
-//     entries.forEach((entry) => {
-//         console.log(entry)
-//         if (entry.isIntersecting) {
-//             entry.target.classList.add('mostrar');
-//         } else {
-//             entry.target.classList.remove('mostrar');
-//         }
-//     });
-// });
+function mostrarScroll(){
+    let scrollTop = document.documentElement.scrollTop;
+    for (var i=0; i < checkpoint.length; i++ ){
+        let checkpointHeight = checkpoint[i].offsetTop;
+        if(checkpointHeight - 100 < scrollTop) {
+            checkpoint[i].style.opacity = 1;
+        }
+    }
+}
+
+window.addEventListener('scroll', mostrarScroll);
 
 
 
-// const hidden = document.querySelectorAll('.hidden');
-// hidden.forEach((el) => observer.observe(el));
 
 
 
