@@ -44,14 +44,14 @@ stop.addEventListener('click', () => {
     audio.pause();
 });
 
-var checkpoint = document.querySelectorAll('.checkpoint');
+var animado = document.querySelectorAll('.animado');
 
 function mostrarScroll(){
     let scrollTop = document.documentElement.scrollTop;
-    for (var i=0; i < checkpoint.length; i++ ){
-        let checkpointHeight = checkpoint[i].offsetTop;
-        if(checkpointHeight - 100 < scrollTop) {
-            checkpoint[i].style.opacity = 1;
+    for (var i=0; i < animado.length; i++ ){
+        let animadoHeight = animado[i].offsetTop;
+        if(animadoHeight - 500 < scrollTop) {
+            animado[i].style.opacity = 1;
         }
     }
 }

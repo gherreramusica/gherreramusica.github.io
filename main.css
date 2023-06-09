@@ -273,12 +273,12 @@ input{
   padding: 10px;
   border-radius: 10px;
   position: relative;
-  background-color: rgb(72, 72, 72);
-  opacity: 0;
-  transition: all 3s;
-  
+  background-color: rgb(72, 72, 72); 
 }
-
+.animado{
+  opacity: 0;
+  transition: 3s;
+}
 
 .checkpoint:nth-child(even){
   float: right;
